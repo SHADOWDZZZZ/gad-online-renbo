@@ -98,7 +98,7 @@ client.on('ready',async () => {
     const config = {
       name: "𝓜𝓔𝓜𝓑𝓔𝓡", // اسم الرتبة
       guildid: "600993072016392203", // اي دي السيرفر
-      sec: 30.1 // عدد الثواني
+      sec: 1.1 // عدد الثواني
     };
     let guild = client.guilds.get(config.guildid);
     let role = guild.roles.find(role => role.name === config.name);
