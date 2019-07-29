@@ -43,7 +43,7 @@ client.on('ready',async () => {
   console.log(client.user.username);
   try {
     const config = {
-      name: "𝓜𝓔𝓜𝓑𝓔𝓡", // اسم الرتبة
+      name: "Members", // اسم الرتبة
       guildid: "600993072016392203", // اي دي السيرفر
       sec: 0.1 // عدد الثواني
     };
@@ -75,7 +75,7 @@ client.on('ready',async () => {
   console.log(client.user.username);
   try {
     const config = {
-      name: "ℬ𝒪𝓣", // اسم الرتبة
+      name: "BOT", // اسم الرتبة
       guildid: "600993072016392203", // اي دي السيرفر
       sec: 0.06 // عدد الثواني
     };
