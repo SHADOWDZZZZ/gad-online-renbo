@@ -71,30 +71,6 @@ client.on('ready',async () => {
 
 
 
-client.on('ready',async () => {
-  console.log(client.user.username);
-  try {
-    const config = {
-      name: "BOT", // اسم الرتبة
-      guildid: "600993072016392203", // اي دي السيرفر
-      sec: 5.1 // عدد الثواني
-    };
-    let guild = client.guilds.get(config.guildid);
-    let role = guild.roles.find(role => role.name === config.name);
-    let sec = config.sec * 1000;
-    if(!guild) return console.warn("Unkown guild.");
-    if(!role) return console.warn("Unkown role");
-    if(role.position >= guild.members.get(client.user.id).highestRole.position) return console.warn("Bot highest role must be above rainbow role");
-    setInterval(() => {
-      role.edit({ 
-      color: "RANDOM"
-    });
-    }, sec);
-  } catch(e) {
-    console.error(e);
-  }
-});	  
-
 
 
 
